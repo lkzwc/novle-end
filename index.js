@@ -37,7 +37,7 @@ app.post("/api/count", async (req, res) => {
 app.get("/api/count", async (req, res) => {
   const result = await Counter.count();
   res.send({
-    code: 0,
+    code: 999,
     data: result,
   });
 });
